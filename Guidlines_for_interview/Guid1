@@ -1,0 +1,5 @@
+1) Install ShadCn/ ui
+    Then go to the instillation page and then copy the code for the node.js
+    =) npx shadcn@latest initnpx shadcn@latest init
+
+    image.png
