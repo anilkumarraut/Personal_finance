@@ -1,0 +1,5 @@
+1) After sign-in
+2) Tured off the powed by Clerk in my website sign-in and sign-up page,
+
+3) First API rought, using Hono:
+    Start by creating api folder inside the "app" folder

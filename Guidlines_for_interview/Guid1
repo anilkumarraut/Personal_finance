@@ -3,3 +3,88 @@
     =) npx shadcn@latest initnpx shadcn@latest init
 
     image.png
+
+    1) Went to the ShadCn then to the component part and the use the ClI to instal the Button component
+
+2) Went on and made a file under the "app" directory called "test" and the a file called page.tsx inside that folder
+    So basicall, "app" is the file where you make your app and then "Route" means different pages of the website, 
+        like one page is about section, another page is different and so on. And page.tsx is the main containt that 
+        is shown when use visite the page.
+
+3) So inside the "app" we have create this folder named "test", then when we want to visit it locally we have to use
+     the name as https://localhost:/3000/test
+        Now when we want to make this concept abstract or don't want to show this to all over the word then we hide this
+            by making another Folder "(auth)" and then "sign-in" inside the "app" to use the concept of OOP
+
+4) Now when you want to go to the file sign-in which is inside the "(auth)/sign-in"  you will just type
+    https://localhost:/3000/sign-in
+
+5) Caught all route; [[...sign_in]]
+        How it works:
+        Any URL that matches the pattern will be caught by this route
+        For example, with [...sign_in]:
+        /sign_in would be caught
+        /sign_in/anything would be caught
+        /sign_in/whatever/you/want would be caught
+
+        This triggers ".next"
+
+6) Note were are dragging and dropping the Page.tsx folder form the "app" to (dashboard) to make it as a main folder or the page that gets loaded in as soon as we login
+
+
+7) Now here the Cleark comes inplay, when user comes into our website, we want the user not go to the main page directly, we want the user to go and Authenticate themselves or make an account "sign-up" 
+    User cann't directly login in to the website, they should go and login or make an account which is guarentee by the Cleark
+
+    Clerk : Third party authentication services
+    why clerk
+
+    ```
+            Clerk - Authentication Service:
+        1. Third-party auth service handling sign-up, sign-in, account management
+        2. Security: Handles password hashing, session management, attack protection, OAuth
+        3. Features: Social logins, 2FA, password reset, user management dashboard
+        4. Benefits: Pre-built components, security updates, time-saving, maintenance handled
+        5. Alternative: Can build custom auth but requires implementing security, database, sessions, rate limiting, email verification
+        6. Custom Auth Needs: User DB, password hashing, session management, security headers, rate limiting, email verification, password reset
+        7. Security Considerations: CSRF protection, XSS prevention, secure cookies, password strength, account locking, session expiration
+        8. Maintenance: Regular updates, attack monitoring, edge cases, multiple auth methods
+        ```
+8) For the clerk
+    Go to the clerk website, and select new project and allow the option that you want the use to start coding logging in or how you want your user to authenticate in your website, like if you want your user to authenticate though the   email, or Phone number or google account and many more then go inside the project
+
+    Then inststall the npm for the clerk
+    npm install @clerk/nextjs
+
+    Then "set your environment file"
+
+
+    #### always be sure that you Environment file are inside ".env.local" which should be inside the ".gitignore"  Please don't push it, be very very carefule with it, and always make sure they are inside the .gitignore
+
+9) Then copy and past the set your environment variables part form the Clerk to the .evn.local file
+
+10) Then follow the next step of add Clerk provider: 
+    Use "Add clerk provider to your app" this and the middleware part can be up and down. so be carefule while looking for it as an answer
+
+    Then create a middleware.tsx file, be careful because middleware is the reserve keyword in NExt.js 
+
+    Be sure that the middleware is should be a root file
+
+    then copy and past it from the Clerk page
+
+    then try to run with "npm run dev"
+
+    # what is middleware
+    =) Middleware in Next.js (and web development in general) is like a security guard or a gatekeeper for your application. 
+
+11) Now to protect the sign-in and sign-up pages, be sure that all of the sign-in / page.tsx is covered by the clerk
+    then you will find the .env variables be sure to update those as well
+
+12) Then we went to the Clerk middleware page to get he isProtectedRoute to get the createRouteMatcher
+
+    Easy, got inside the middleware code part of the clerk and the copied and pasted the code here in the 
+    middleware.ts file
+
+
+   
+
+
